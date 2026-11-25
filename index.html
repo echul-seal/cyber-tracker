@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Breach Watch: the largest cyber attacks right now</title>
+<meta name="description" content="The biggest cyber attacks right now, newly exploited vulnerabilities and the most active ransomware groups. Updated daily.">
+<style>
+:root{--t:#0a0a0a;--s:#6e6e73;--h:rgba(0,0,0,.08);--a:#d70015}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--t);font:16px/1.5 -apple-system,system-ui,"Inter",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:680px;margin:0 auto;padding:40px 20px 80px}
+a{color:inherit}
+header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:56px}
+.brand{font-weight:650;letter-spacing:-.01em}
+.upd{color:var(--s);font-size:13px}
+.label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--s);margin:0 0 14px;font-weight:500}
+.hero h1{font-size:30px;line-height:1.15;letter-spacing:-.025em;margin:10px 0 14px;font-weight:650}
+.sum{font-size:17px;color:#333;margin:0 0 24px}
+dl.facts{display:grid;grid-template-columns:1fr 1fr;gap:16px 24px;margin:0 0 20px;padding:20px 0;border-top:1px solid var(--h);border-bottom:1px solid var(--h)}
+dt{font-size:12px;color:var(--s)}
+dd{margin:2px 0 0;font-size:15px}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--a);font-weight:500}
+.live:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--a)}
+.done{font-size:13px;color:var(--s)}
+.src{font-size:13px;color:var(--s);margin-top:8px}
+.src a{color:var(--s)}
+section{margin-top:72px}
+.inc{padding:22px 0;border-top:1px solid var(--h)}
+.inc h3{font-size:17px;margin:6px 0 6px;font-weight:600;letter-spacing:-.01em;line-height:1.3}
+.meta{font-size:13px;color:var(--s)}
+.inc p{margin:0 0 6px;color:#333;font-size:15px}
+.tw{margin:12px 0 0;padding:12px 14px;border:1px solid var(--h);border-radius:12px;font-size:14px;display:block;color:inherit;text-decoration:none}
+.tw .meta{display:block;margin-bottom:4px}
+.tw b{color:var(--t);font-weight:600}
+.tws-h{font-size:12px;color:var(--s);margin:18px 0 0}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:13px 0;border-top:1px solid var(--h);font-size:15px}
+.row .r{color:var(--s);white-space:nowrap;font-size:13px}
+.row small{display:block;color:var(--s);font-size:13px}
+.tag{font-size:11px;color:var(--a);border:1px solid currentColor;border-radius:6px;padding:0 5px;margin-left:6px;white-space:nowrap}
+.bar{height:3px;background:var(--t);border-radius:2px;margin-top:6px}
+.empty{color:var(--s);font-size:14px}
+footer{margin-top:72px;font-size:12px;color:var(--s);line-height:1.6}
+@media(min-width:700px){.hero h1{font-size:38px}main{padding-top:64px}}
+</style></head>
+<body><main>
+<header><span class="brand">Breach Watch</span><span class="upd" id="upd"></span></header>
+<div class="hero" id="hero"></div>
+<section><p class="label">Incident feed</p><div id="feed"></div></section>
+<section><p class="label">Newly exploited vulnerabilities &middot; last 14 days</p><div id="kev"></div><div class="src">Source: <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA Known Exploited Vulnerabilities</a></div></section>
+<section><p class="label" id="rw-h">Most active ransomware groups this month</p><div id="rw"></div><div class="src">Victims posted on leak sites, via <a href="https://www.ransomware.live" target="_blank" rel="noopener">ransomware.live</a>. A claim is not a confirmed attack.</div></section>
+<footer>Every fact links to its source. Figures are as reported and may change as investigations go on. Built and updated daily by Seal.</footer>
+</main>
+<script>
+const $=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+const D=d=>new Date(d.length==10?d+'T00:00:00Z':d);
+const fmt=d=>D(d).toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'});
+const ago=t=>{const h=(Date.now()-D(t))/36e5;return h<24?Math.max(1,Math.round(h))+'h ago':Math.round(h/24)+'d ago'};
+const link=(n,u)=>{const a=$('a',null,n);a.href=u;a.target='_blank';a.rel='noopener';return a};
+function tweet(t){const a=link('',t.url);a.className='tw';const m=$('span','meta');m.append($('b',null,t.name),' @'+t.handle+' \u00b7 '+ago(t.time));a.append(m,document.createTextNode(t.text));return a}
+function sources(s){const p=$('div','src');p.append('Sources: ');s.forEach((x,i)=>{if(i)p.append(' \u00b7 ');p.append(link(x.name,x.url))});return p}
+function state(i){return i.ongoing?$('span','live','Ongoing'):$('span','done','Contained')}
+function tweets(el,list,n){if(!list||!list.length)return;el.append($('p','tws-h','On X'));list.slice(0,n).forEach(t=>el.append(tweet(t)))}
+function renderIncidents(db){
+ document.getElementById('upd').textContent='Updated '+ago(db.updated);
+ const all=Object.entries(db.incidents).map(([k,v])=>Object.assign({slug:k},v));
+ const h=all.find(i=>i.slug===db.hero)||all[0];
+ const el=document.getElementById('hero');
+ el.append($('p','label','Biggest incident right now'),state(h),$('h1',null,h.title),$('p','sum',h.summary));
+ const dl=$('dl','facts');[['Victim',h.victim],['Attacker',h.attacker||'Unknown'],['Type',h.type],['Scale',h.scale],['Disclosed',fmt(h.date)],['Status',h.status]].forEach(([k,v])=>{const d=$('div');d.append($('dt',null,k),$('dd',null,v));dl.append(d)});
+ el.append(dl,sources(h.sources));tweets(el,h.tweets,3);
+ const feed=document.getElementById('feed');
+ all.filter(i=>i!==h).sort((a,b)=>D(b.date)-D(a.date)).forEach(i=>{const c=$('div','inc');const m=$('div','meta');m.append(fmt(i.date)+' \u00b7 '+i.type+' \u00b7 ',state(i));c.append(m,$('h3',null,i.title),$('p',null,i.summary),$('div','meta',i.scale+(i.attacker?' \u00b7 Attacker: '+i.attacker:'')),sources(i.sources));tweets(c,i.tweets,3);feed.append(c)});
+}
+function renderKev(k){
+ const el=document.getElementById('kev');const end=D(k.dateReleased);const cut=new Date(end-14*864e5);
+ const v=k.vulnerabilities.filter(x=>D(x.dateAdded)>=cut).sort((a,b)=>D(b.dateAdded)-D(a.dateAdded));
+ if(!v.length){el.append($('p','empty','Nothing added in the last 14 days.'));return}
+ v.forEach(x=>{const r=$('div','row');const l=$('div');const t=link(x.vendorProject+' '+x.product,'https://nvd.nist.gov/vuln/detail/'+x.cveID);t.style.textDecoration='none';l.append(t);if(x.knownRansomwareCampaignUse==='Known')l.append($('span','tag','Ransomware'));l.append($('small',null,x.cveID+' \u00b7 '+x.vulnerabilityName));r.append(l,$('span','r',fmt(x.dateAdded)));el.append(r)});
+}
+function renderRw(list){
+ const el=document.getElementById('rw');const now=new Date();const ym=now.toISOString().slice(0,7);
+ const mon=now.toLocaleDateString('en-US',{month:'long',timeZone:'UTC'});document.getElementById('rw-h').textContent='Most active ransomware groups \u00b7 '+mon;
+ const c={};list.forEach(x=>{const d=(x.discovered||x.attackdate||'');if(d.slice(0,7)===ym&&x.group)c[x.group]=(c[x.group]||0)+1});
+ const top=Object.entries(c).sort((a,b)=>b[1]-a[1]).slice(0,10);if(!top.length){el.append($('p','empty','No data yet this month.'));return}
+ const max=top[0][1];top.forEach(([g,n])=>{const r=$('div','row');const l=$('div');l.style.flex='1';l.append(link(g,'https://www.ransomware.live/group/'+encodeURIComponent(g)));const b=$('div','bar');b.style.width=(n/max*100)+'%';l.append(b);r.append(l,$('span','r',n+' victims'));el.append(r)});
+}
+const get=u=>fetch(u,{cache:'no-cache'}).then(r=>{if(!r.ok)throw r.status;return r.json()});
+get('incidents.json').then(renderIncidents).catch(()=>document.getElementById('hero').append($('p','empty','Incidents could not load.')));
+get('kev.json').then(renderKev).catch(()=>document.getElementById('kev').append($('p','empty','Could not load the CISA catalog.')));
+get('ransomware.json').then(renderRw).catch(()=>document.getElementById('rw').append($('p','empty','Could not load ransomware data.')));
+</script></body></html>
