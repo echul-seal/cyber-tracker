@@ -1,17 +1,292 @@
 {
- "updated": "2026-11-25T11:15:00Z",
+ "updated": "2026-11-26T00:01:05Z",
  "hero": "cia-odni-osint-breach",
  "incidents": {
-  "cia-odni-osint-breach": {"title": "CIA, ODNI and NGA open-source intel system breached", "victim": "CIA, ODNI, NGA", "attacker": "Unknown (NYT sources suggest China)", "type": "Breach", "scale": "Unclassified OSINT network; what was taken isn't known yet", "date": "2026-11-24", "ongoing": true, "status": "Investigation ongoing; intrusion reported resolved", "summary": "Hackers got into an unclassified system US spy agencies use to analyze social media, satellite imagery and purchased data. Officials say classified networks weren't touched.", "sources": [{"name": "CyberScoop", "url": "https://cyberscoop.com/cia-odni-osint-data-breach/"}, {"name": "Benzinga (via NYT)", "url": "https://www.benzinga.com/news/26/11/63612718/cia-hacked-intruders-breach-intelligence-system-tied-to-social-media-satellite-data"}, {"name": "Particle", "url": "https://particle.news/story/cia-and-odni-say-opensource-intelligence-system-was-breached"}], "tweets": [{"name": "David DiMolfetta", "handle": "ddimolfetta", "time": "2026-11-24T22:55:29Z", "url": "https://x.com/ddimolfetta/status/2125362698397348264", "text": "CIA and ODNI discovered a breach of an unclassified system used to analyze public and commercially available information, better known as open-source intelligence, or OSINT. Confirming NYT."}, {"name": "Shadow of Ezra", "handle": "ShadowofEzra", "time": "2026-11-24T21:35:41Z", "url": "https://x.com/ShadowofEzra/status/2125342617911349463", "text": "The CIA & ODNI has had a cyber breach. This is the latest breach and/or system outage in a growing list of government agencies within the past month…"}, {"name": "Coffe Report", "handle": "CoffeReport", "time": "2026-11-24T20:55:17Z", "url": "https://x.com/CoffeReport/status/2125332450268021054", "text": "BREAKING: CIA and ODNI suffer cybersecurity breach. Unclassified information was reportedly exposed… The perpetrator, attack method and full extent of the breach remain unknown."}]},
-  "fbi-ncic-breach": {"title": "FBI's national crime database breached", "victim": "FBI National Crime Information Center", "attacker": "Unknown", "type": "Breach", "scale": "NCIC holds 18M+ active records; what was accessed is unconfirmed", "date": "2026-11-20", "ongoing": true, "status": "FBI investigating; no group has claimed it", "summary": "The database police query for warrants, stolen property and missing persons was reportedly compromised, the FBI's second reported breach in two months.", "sources": [{"name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"}, {"name": "ABC News", "url": "https://abcnews.com/US/fbis-national-crime-database-targeted-hack-trump/story?id=138347810"}, {"name": "Captain Compliance", "url": "https://captaincompliance.com/news/fbi-ncic-cyberattack-investigation/"}], "tweets": [{"name": "CNN NationalSecurity", "handle": "NatSecCNN", "time": "2026-11-21T02:16:50Z", "url": "https://x.com/NatSecCNN/status/2123963817268777334", "text": "BREAKING: The FBI was hacked again, this time the breach targeted its crime database, sources tell @evanperez"}, {"name": "Clash Report", "handle": "clashreport", "time": "2026-11-21T03:35:38Z", "url": "https://x.com/clashreport/status/2123983650018451474", "text": "NEW: The FBI is investigating an apparent hack of its National Crime Information Center (NCIC)… The breach is the FBI's second in recent months."}]},
-  "optimizely-supply-chain": {"title": "Optimizely flaw used to plant malware on 178 major websites", "victim": "Optimizely customers incl. BBC, CNN, Zoom, HSBC", "attacker": "Unknown", "type": "Supply chain", "scale": "188 infected scripts across 178 organizations", "date": "2026-11-16", "ongoing": false, "status": "Flaw fixed and code removed; CISA added CVE-2026-132224 to KEV on Nov 24", "summary": "Malicious JavaScript served from Optimizely's own CDN skimmed cards, swapped crypto addresses and tried to push iPhone exploits to visitors of big-name sites.", "sources": [{"name": "The Record", "url": "https://therecord.media/optimizely-malicious-code-customer-sites"}, {"name": "SecurityWeek", "url": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/"}, {"name": "Report URI", "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/"}, {"name": "CISA KEV", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224"}], "tweets": [{"name": "Scott Helme", "handle": "Scott_Helme", "time": "2026-11-16T22:57:46Z", "url": "https://x.com/Scott_Helme/status/2122464168989098461", "text": "This is a big one. We found malicious JavaScript being served through Optimizely to some of the world's largest websites. 178 organisations affected, with everything from crypto theft and card skimming to iOS exploits."}, {"name": "SlowMist", "handle": "SlowMist_Team", "time": "2026-11-17T06:34:07Z", "url": "https://x.com/SlowMist_Team/status/2122579014346776653", "text": "A large-scale JavaScript supply chain attack, dubbed OPTIMJACK, has compromised websites using Optimizely. Researchers identified 188 compromised scripts across 178 organizations…"}]},
-  "european-commission-ai-attack": {"title": "European Commission hit by AI-assisted cyberattack", "victim": "European Commission", "attacker": "Unknown (Euronews: suspected China link via the Artex tool)", "type": "Breach", "scale": "Internal systems down 10+ days; EU Academy users' names and emails exposed", "date": "2026-11-19", "ongoing": true, "status": "Full extent still under investigation; EU Academy suspended", "summary": "Payroll, health insurance and translation systems were disrupted for over ten days, and the investigation has since found a data breach at the EU Academy learning platform.", "sources": [{"name": "SecurityWeek", "url": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/"}, {"name": "Check Point Research", "url": "https://research.checkpoint.com/2026/23rd-november-threat-intelligence-report/"}], "tweets": [{"name": "POLITICOEurope", "handle": "POLITICOEurope", "time": "2026-11-19T07:51:12Z", "url": "https://x.com/POLITICOEurope/status/2123323190684369177", "text": "EXCLUSIVE: A huge cyberattack has hit the European Commission. The incident has potentially compromised swaths of personal data…"}, {"name": "unusual_whales", "handle": "unusual_whales", "time": "2026-11-19T11:31:00Z", "url": "https://x.com/unusual_whales/status/2123378503563276767", "text": "BREAKING: The European Commission has been hit by a major cyberattack that may have exposed large amounts of staff personal data, per Politico…"}]},
-  "tower-records-japan": {"title": "Tower Records Japan leaks ~11 million customer records", "victim": "Tower Records Japan", "attacker": "Unknown", "type": "Breach", "scale": "~11M records; 10.2M with emails, member IDs and hashed passwords", "date": "2026-11-22", "ongoing": true, "status": "Online store suspended during investigation", "summary": "Attackers got into the e-commerce platform and took login records plus names, birth dates and some addresses and phone numbers. No card data, the company says.", "sources": [{"name": "SC World", "url": "https://www.scworld.com/brief/tower-records-reports-massive-data-breach-affecting-11-million-users"}, {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-22/tower-records-becomes-latest-japan-retailer-hit-by-data-breach"}, {"name": "Japan Times", "url": "https://www.japantimes.co.jp/business/2026/11/23/tower-records-data-breach/"}], "tweets": [{"name": "J-Pop Project News", "handle": "JPopProjectNews", "time": "2026-11-22T12:28:18Z", "url": "https://x.com/JPopProjectNews/status/2124480086527144188", "text": "\"Tower Records Online\" service has been temporarily suspended following the leakage of approximately 11 million pieces of personal information…"}, {"name": "Bloomberg", "handle": "business", "time": "2026-11-22T10:15:08Z", "url": "https://x.com/business/status/2124446576030441549", "text": "Tower Records said customer information was leaked following unauthorized access, making it Japan's latest retailer to disclose a data breach"}]},
-  "bell-canada": {"title": "Bell Canada customer data taken by an 'agentic' attacker", "victim": "Bell, Bell Aliant, Bell MTS, Virgin Plus, Lucky Mobile customers", "attacker": "Unknown ('agentic threat actor', per Bell)", "type": "Breach", "scale": "Residential and business customers; number not disclosed", "date": "2026-11-17", "ongoing": true, "status": "Bell investigating; customer notices sent Nov 23", "summary": "An attacker got into an internal Bell system holding names, addresses, phone numbers, emails, account numbers and last-payment details.", "sources": [{"name": "BNN Bloomberg", "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/23/bell-investigating-cyberattack-that-exposed-customer-information-last-week/"}, {"name": "Bell notice", "url": "https://www.bell.ca/Residential_services/cybernotice"}], "tweets": [{"name": "Dark Web Intelligence", "handle": "DailyDarkWeb", "time": "2026-11-24T09:19:57Z", "url": "https://x.com/DailyDarkWeb/status/2125157463037026767", "text": "UPDATE: Bell Canada says its Nov. 17 breach also hit consumers… Bell says card numbers and bank details were not, and it has not said how many customers were affected."}, {"name": "Jay Bishop", "handle": "jbish1572", "time": "2026-11-23T20:34:31Z", "url": "https://x.com/jbish1572/status/2124964835192689101", "text": "Bell's breach got bigger… No cards taken, but an account number and last payment amount are exactly what a good scam call needs."}]},
-  "france-supermarket-fridges": {"title": "France blames Iran's Revolutionary Guard for supermarket fridge sabotage", "victim": "~700 French supermarkets", "attacker": "Shahid Kaveh, IRGC (Iran), per France", "type": "Sabotage (OT)", "scale": "~700 of France's 10,000 supermarkets; at least 15 fires", "date": "2026-11-09", "ongoing": false, "status": "Arrest warrants for three Iranians; France seeking EU sanctions", "summary": "France formally attributed the Oct 11-12 attack that hijacked refrigeration controls and spoiled food. Similar outages hit stores elsewhere in Europe on Nov 2.", "sources": [{"name": "AP via OPB", "url": "https://www.opb.org/article/2026/11/09/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/"}, {"name": "ABC News", "url": "https://abcnews.com/International/unprecedented-cyberattacks-refrigerators-france/story?id=138028066"}, {"name": "Forbes", "url": "https://forbes.com/sites/ariredbord/2026/11/24/defenders-must-move-at-machine-speed-to-stop-ai-cyberattacks"}], "tweets": []},
-  "osaka-email-provider": {"title": "Email distribution provider hack exposes ~77M addresses, incl. Osaka city", "victim": "Osaka city and ~400 customers of an email service", "attacker": "Unknown", "type": "Supply chain", "scale": "~77M email addresses; 1M+ from Osaka", "date": "2026-11-02", "ongoing": false, "status": "Disclosed; used to send fraudulent emails", "summary": "Attackers compromised a third-party email distribution service, exposing customers' mailing lists and sending fraudulent emails.", "sources": [{"name": "Check Point Research", "url": "https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/"}], "tweets": []},
-  "tsmc-cloud-provider": {"title": "TSMC employee data exposed through a cloud provider", "victim": "TSMC current and former employees", "attacker": "Unknown", "type": "Breach (third party)", "scale": "6.9 GB of alleged employee data advertised", "date": "2026-11-16", "ongoing": false, "status": "TSMC says its own systems and customer data were unaffected", "summary": "A breach at an unnamed cloud provider exposed TSMC staff information, later advertised on a cybercrime forum.", "sources": [{"name": "Check Point Research", "url": "https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/"}], "tweets": []},
-  "infoblox-vendor": {"title": "Infoblox customer data accessed via a migration vendor", "victim": "Infoblox", "attacker": "Unknown", "type": "Breach (third party)", "scale": "Customer count not disclosed", "date": "2026-11-23", "ongoing": false, "status": "Infoblox says products and services unaffected", "summary": "A compromised data migration vendor exposed sensitive customer data stored in a migration environment.", "sources": [{"name": "Check Point Research", "url": "https://research.checkpoint.com/2026/23rd-november-threat-intelligence-report/"}], "tweets": []},
-  "binance-heist": {"title": "Binance $6.36B heist, the largest theft on record", "victim": "Binance", "attacker": "TraderTraitor (North Korea), per FBI", "type": "Crypto theft", "scale": "$6.36B stolen across ten blockchains", "date": "2026-10-29", "ongoing": true, "status": "DOJ moved to forfeit $1.1B in frozen USDC; $2.9B+ frozen, seized or returned", "summary": "Attackers drained Binance hot wallets in about 20 minutes. Recovery and laundering tracking are still under way.", "sources": [{"name": "TRM Labs", "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"}, {"name": "CoinDesk", "url": "https://coindesk.com/policy/2026/11/24/u-s-seeks-usd1-1-billion-seized-in-binance-hack-as-north-korean-funds-keep-moving"}, {"name": "NPR", "url": "https://www.npr.org/2026/10/31/nx-s1-6024426/binance-crypto-heist-cyber-criminals-north-korea"}], "tweets": [{"name": "Wu Blockchain", "handle": "WuBlockchain", "time": "2026-11-21T02:02:55Z", "url": "https://x.com/WuBlockchain/status/2123960315440500768", "text": "Investigation: Only $32M recovered three weeks after $6.4B Binance hack, $2.82B frozen… The FBI previously attributed the attack to North Korea-linked TraderTraitor."}]}
+  "cia-odni-osint-breach": {
+   "title": "CIA, ODNI and NGA open-source intel system breached",
+   "victim": "CIA, ODNI, NGA",
+   "attacker": "Unknown (NYT sources suggest China; AI tool ARTEX reportedly used, unconfirmed)",
+   "type": "Breach",
+   "scale": "Unclassified OSINT network; what was taken isn't known yet",
+   "date": "2026-11-24",
+   "ongoing": true,
+   "status": "ODNI says breach resolved; forensic investigation ongoing, no state attribution published",
+   "summary": "Hackers got into an unclassified system US spy agencies use to analyze social media, satellite imagery and purchased data. Officials say classified networks weren't touched. Part of a wave of US federal intrusions that also hit the FBI and Treasury's FinCEN.",
+   "sources": [
+    {"name": "CyberScoop", "url": "https://cyberscoop.com/cia-odni-osint-data-breach/"},
+    {"name": "France 24", "url": "https://www.france24.com/en/americas/20261125-cyberattack-exposes-unclassified-information-from-cia-system-us-media-reports"},
+    {"name": "ClearanceJobs", "url": "https://news.clearancejobs.com/2026/11/24/cia-odni-breach-hits-open-source-intelligence-network/"},
+    {"name": "Techgenyz", "url": "https://techgenyz.com/cia-cyberattack-unclassified-osint-2026"},
+    {"name": "Benzinga (via NYT)", "url": "https://www.benzinga.com/news/26/11/63612718/cia-hacked-intruders-breach-intelligence-system-tied-to-social-media-satellite-data"},
+    {"name": "Particle", "url": "https://particle.news/story/cia-and-odni-say-opensource-intelligence-system-was-breached"}
+   ],
+   "tweets": [
+    {"name": "Reuters", "handle": "Reuters", "time": "2026-11-25T00:10:12Z", "url": "https://x.com/Reuters/status/2125381500472353215", "text": "US CIA, ODNI suffer cybersecurity breach of some unclassified information, source says"},
+    {"name": "David DiMolfetta", "handle": "ddimolfetta", "time": "2026-11-24T22:55:29Z", "url": "https://x.com/ddimolfetta/status/2125362698397348264", "text": "CIA and ODNI discovered a breach of an unclassified system used to analyze public and commercially available information, better known as open-source intelligence, or OSINT. Confirming NYT."},
+    {"name": "OSINTdefender", "handle": "sentdefender", "time": "2026-11-25T13:03:41Z", "url": "https://x.com/sentdefender/status/2125576157001138623", "text": "…Yesterday it was reported that an open source analysis system used by the CIA, ODNI and National Geospatial-Intelligence Agency was breached…"}
+   ]
+  },
+  "treasury-fincen-intrusion": {
+   "title": "Treasury's FinCEN takes systems offline after intrusion",
+   "victim": "US Treasury, Financial Crimes Enforcement Network (FinCEN)",
+   "attacker": "Unknown",
+   "type": "Breach",
+   "scale": "\"Limited subset\" of systems accessed; some taken offline, BSA filing deadlines extended to Dec 30",
+   "date": "2026-11-24",
+   "ongoing": true,
+   "status": "FBI, CISA and outside forensic examiners investigating; systems not named, no data loss disclosed",
+   "summary": "The bureau that collects banks' suspicious activity reports found unauthorized access to part of its network and pulled some systems offline, hours after the CIA/ODNI breach became public. No link between the incidents has been established.",
+   "sources": [
+    {"name": "The Record", "url": "https://therecord.media/treasury-fincen-takes-systems-offline-after-cyber-incident"},
+    {"name": "CyberScoop", "url": "https://cyberscoop.com/fincen-investigates-cybersecurity-incident-systems-offline/"},
+    {"name": "Reuters via Yahoo", "url": "https://www.yahoo.com/news/us/articles/us-fincen-takes-systems-offline-144239506.html"},
+    {"name": "The Hacker News", "url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html"},
+    {"name": "Nextgov/FCW", "url": "https://www.nextgov.com/cybersecurity/2026/11/treasurys-financial-crimes-bureau-takes-systems-offline-after-hack/417442/"}
+   ],
+   "tweets": [
+    {"name": "The Record From Recorded Future News", "handle": "TheRecord_Media", "time": "2026-11-25T13:41:37Z", "url": "https://x.com/TheRecord_Media/status/2125585703283437679", "text": "The Treasury Department is the latest U.S. federal agency to be affected by a cyber incident, warning that it has taken some systems offline after a cyberattack resulted in \"unauthorized access\"…"},
+    {"name": "Reuters", "handle": "Reuters", "time": "2026-11-25T23:10:08Z", "url": "https://x.com/Reuters/status/2125728775954366919", "text": "US FinCEN takes some systems offline after cyber incident, official says"},
+    {"name": "OSINTdefender", "handle": "sentdefender", "time": "2026-11-25T13:03:41Z", "url": "https://x.com/sentdefender/status/2125576157001138623", "text": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) says it is investigating a cybersecurity incident that resulted in unauthorized access to a limited subset of its systems…"}
+   ]
+  },
+  "1password-github-breach": {
+   "title": "1Password customer data stolen via hacked employee GitHub account",
+   "victim": "1Password customers",
+   "attacker": "Unknown",
+   "type": "Breach (supply chain / insider access)",
+   "scale": "Customer names, emails and some recovery/invitation tokens; number of customers not disclosed",
+   "date": "2026-11-19",
+   "ongoing": false,
+   "status": "Disclosed Nov 25; contained, internal credentials rotated; vaults and encryption keys not compromised",
+   "summary": "An attacker used a compromised employee GitHub account to push malicious code to 1Password's backend services and copy customer account data. Password vaults and the keys protecting them were not accessed.",
+   "sources": [
+    {"name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/"},
+    {"name": "1Password", "url": "https://1password.com/blog/update-on-nov-2026-security-incident"},
+    {"name": "The Verge", "url": "https://www.theverge.com/tech/1042409/1password-data-breach-leak"}
+   ],
+   "tweets": [
+    {"name": "BleepingComputer", "handle": "BleepinComputer", "time": "2026-11-25T21:33:48Z", "url": "https://x.com/BleepinComputer/status/2125704532759814459", "text": "1Password customer data stolen after employee GitHub account breach"},
+    {"name": "Cointelegraph", "handle": "Cointelegraph", "time": "2026-11-25T18:20:42Z", "url": "https://x.com/Cointelegraph/status/2125655933892132938", "text": "🚨 ALERT: 1Password confirms a breach through an employee's GitHub account exposed customer names and emails, but says password vaults were not accessed."},
+    {"name": "The Verge", "handle": "verge", "time": "2026-11-25T19:13:22Z", "url": "https://x.com/verge/status/2125669189826543694", "text": "1Password says the security breach didn't compromise its vaults, but didn't mention how many customers were affected."}
+   ]
+  },
+  "n0n-financial-vendors": {
+   "title": "n0n extortion gang leaks Visa, Mastercard and JPMorgan customer data via vendors",
+   "victim": "Third-party vendors of JPMorgan Chase, Visa, Mastercard and others",
+   "attacker": "n0n (ransomware/extortion group)",
+   "type": "Ransomware / extortion (third party)",
+   "scale": "~16,000 customer emails plus phone numbers and account IDs published; banks say core systems unaffected",
+   "date": "2026-11-16",
+   "ongoing": true,
+   "status": "Data dumped after 48-hour deadline; banks say no card numbers taken",
+   "summary": "n0n claimed access to JPMorgan cardmember engagement records held by outside service providers and published customer names, emails, phone numbers and marketing records.",
+   "sources": [
+    {"name": "Business Standard (Reuters)", "url": "https://www.business-standard.com/world-news/visa-mastercard-jpmorgan-customer-data-leak-ransomware-attack-us-outage-126112000197_1.html"},
+    {"name": "Wccftech", "url": "https://wccftech.com/hackers-leak-personal-data-of-thousands-of-visa-mastercard-and-jpmorgan-chase-customers-in-ransomware-attack/"},
+    {"name": "Newsweek", "url": "https://www.newsweek.com/cyber-attack-websites-affected-12725863"}
+   ],
+   "tweets": [
+    {"name": "Cybernews", "handle": "Cybernews", "time": "2026-11-19T11:20:43Z", "url": "https://x.com/Cybernews/status/2123375916759896535", "text": "After a 48-hour countdown set for various companies to pay up the ransom passed, the ransomware gang n0n has dumped the stolen data of JPMorgan Chase…"},
+    {"name": "FalconFeeds.io", "handle": "FalconFeedsio", "time": "2026-11-23T10:42:41Z", "url": "https://x.com/FalconFeedsio/status/2124815897428935028", "text": "🚨 190+ organisations across 36 countries. n0n ransomware posted 59 victims in 24 hours including claims naming Visa, Mastercard & JPMorgan Chase…"}
+   ]
+  },
+  "st-jamess-place": {
+   "title": "St James's Place confirms October cyberattack",
+   "victim": "St James's Place (UK wealth manager, ~1M clients)",
+   "attacker": "Mimori (Russian-speaking extortion group, per Breachsense)",
+   "type": "Ransomware / extortion",
+   "scale": "Number of affected clients not disclosed",
+   "date": "2026-10-21",
+   "ongoing": false,
+   "status": "Disclosed Nov 24; contained, regulators and affected clients notified",
+   "summary": "The FTSE 100 wealth manager confirmed a late-October incident claimed by Mimori, following attacks on Rathbones and Saltus. It says operations and client access weren't disrupted.",
+   "sources": [
+    {"name": "Bloomberg Law", "url": "https://news.bloomberglaw.com/business-and-practice/uk-wealth-manager-st-jamess-place-hit-by-cyber-attack"},
+    {"name": "Breachsense", "url": "https://www.breachsense.com/breaches/st-james-s-place-data-breach/"},
+    {"name": "SSBCrack News", "url": "https://news.ssbcrack.com/st-jamess-place-hit-by-cyberattack-as-hackers-target-wealth-managers/"}
+   ],
+   "tweets": []
+  },
+  "fbi-ncic-breach": {
+   "title": "FBI's national crime database breached",
+   "victim": "FBI National Crime Information Center",
+   "attacker": "Unknown",
+   "type": "Breach",
+   "scale": "NCIC holds 18M+ active records; what was accessed is unconfirmed",
+   "date": "2026-11-20",
+   "ongoing": true,
+   "status": "FBI investigating; no group has claimed it",
+   "summary": "The database police query for warrants, stolen property and missing persons was reportedly compromised, the FBI's second reported breach in two months.",
+   "sources": [
+    {"name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"},
+    {"name": "ABC News", "url": "https://abcnews.com/US/fbis-national-crime-database-targeted-hack-trump/story?id=138347810"},
+    {"name": "Captain Compliance", "url": "https://captaincompliance.com/news/fbi-ncic-cyberattack-investigation/"}
+   ],
+   "tweets": [
+    {"name": "CNN NationalSecurity", "handle": "NatSecCNN", "time": "2026-11-21T02:16:50Z", "url": "https://x.com/NatSecCNN/status/2123963817268777334", "text": "BREAKING: The FBI was hacked again, this time the breach targeted its crime database, sources tell @evanperez"},
+    {"name": "Clash Report", "handle": "clashreport", "time": "2026-11-21T03:35:38Z", "url": "https://x.com/clashreport/status/2123983650018451474", "text": "NEW: The FBI is investigating an apparent hack of its National Crime Information Center (NCIC)… The breach is the FBI's second in recent months."}
+   ]
+  },
+  "optimizely-supply-chain": {
+   "title": "Optimizely flaw used to plant malware on 178 major websites",
+   "victim": "Optimizely customers incl. BBC, CNN, Zoom, HSBC",
+   "attacker": "Unknown",
+   "type": "Supply chain",
+   "scale": "188 infected scripts across 178 organizations",
+   "date": "2026-11-16",
+   "ongoing": false,
+   "status": "Flaw fixed and code removed; CISA added CVE-2026-132224 to KEV on Nov 24",
+   "summary": "Malicious JavaScript served from Optimizely's own CDN skimmed cards, swapped crypto addresses and tried to push iPhone exploits to visitors of big-name sites.",
+   "sources": [
+    {"name": "The Record", "url": "https://therecord.media/optimizely-malicious-code-customer-sites"},
+    {"name": "SecurityWeek", "url": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/"},
+    {"name": "Report URI", "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/"},
+    {"name": "CISA KEV", "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224"}
+   ],
+   "tweets": [
+    {"name": "Scott Helme", "handle": "Scott_Helme", "time": "2026-11-16T22:57:46Z", "url": "https://x.com/Scott_Helme/status/2122464168989098461", "text": "This is a big one. We found malicious JavaScript being served through Optimizely to some of the world's largest websites. 178 organisations affected, with everything from crypto theft and card skimming to iOS exploits."},
+    {"name": "SlowMist", "handle": "SlowMist_Team", "time": "2026-11-17T06:34:07Z", "url": "https://x.com/SlowMist_Team/status/2122579014346776653", "text": "A large-scale JavaScript supply chain attack, dubbed OPTIMJACK, has compromised websites using Optimizely. Researchers identified 188 compromised scripts across 178 organizations…"}
+   ]
+  },
+  "european-commission-ai-attack": {
+   "title": "European Commission hit by AI-assisted cyberattack",
+   "victim": "European Commission",
+   "attacker": "Unknown (Euronews: suspected China link via the Artex tool)",
+   "type": "Breach",
+   "scale": "Internal systems down 10+ days; EU Academy users' names and emails exposed",
+   "date": "2026-11-19",
+   "ongoing": true,
+   "status": "Full extent still under investigation; EU Academy suspended",
+   "summary": "Payroll, health insurance and translation systems were disrupted for over ten days, and the investigation has since found a data breach at the EU Academy learning platform.",
+   "sources": [
+    {"name": "SecurityWeek", "url": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/"},
+    {"name": "Check Point Research", "url": "https://research.checkpoint.com/2026/23rd-november-threat-intelligence-report/"}
+   ],
+   "tweets": [
+    {"name": "POLITICOEurope", "handle": "POLITICOEurope", "time": "2026-11-19T07:51:12Z", "url": "https://x.com/POLITICOEurope/status/2123323190684369177", "text": "EXCLUSIVE: A huge cyberattack has hit the European Commission. The incident has potentially compromised swaths of personal data…"},
+    {"name": "unusual_whales", "handle": "unusual_whales", "time": "2026-11-19T11:31:00Z", "url": "https://x.com/unusual_whales/status/2123378503563276767", "text": "BREAKING: The European Commission has been hit by a major cyberattack that may have exposed large amounts of staff personal data, per Politico…"}
+   ]
+  },
+  "tower-records-japan": {
+   "title": "Tower Records Japan leaks ~11 million customer records",
+   "victim": "Tower Records Japan",
+   "attacker": "Unknown",
+   "type": "Breach",
+   "scale": "~11M records; 10.2M with emails, member IDs and hashed passwords",
+   "date": "2026-11-22",
+   "ongoing": true,
+   "status": "Online store suspended during investigation",
+   "summary": "Attackers got into the e-commerce platform and took login records plus names, birth dates and some addresses and phone numbers. No card data, the company says.",
+   "sources": [
+    {"name": "SC World", "url": "https://www.scworld.com/brief/tower-records-reports-massive-data-breach-affecting-11-million-users"},
+    {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-22/tower-records-becomes-latest-japan-retailer-hit-by-data-breach"},
+    {"name": "Japan Times", "url": "https://www.japantimes.co.jp/business/2026/11/23/tower-records-data-breach/"}
+   ],
+   "tweets": [
+    {"name": "J-Pop Project News", "handle": "JPopProjectNews", "time": "2026-11-22T12:28:18Z", "url": "https://x.com/JPopProjectNews/status/2124480086527144188", "text": "\"Tower Records Online\" service has been temporarily suspended following the leakage of approximately 11 million pieces of personal information…"},
+    {"name": "Bloomberg", "handle": "business", "time": "2026-11-22T10:15:08Z", "url": "https://x.com/business/status/2124446576030441549", "text": "Tower Records said customer information was leaked following unauthorized access, making it Japan's latest retailer to disclose a data breach"}
+   ]
+  },
+  "bell-canada": {
+   "title": "Bell Canada customer data taken by an 'agentic' attacker",
+   "victim": "Bell, Bell Aliant, Bell MTS, Virgin Plus, Lucky Mobile customers",
+   "attacker": "Unknown ('agentic threat actor', per Bell)",
+   "type": "Breach",
+   "scale": "Residential and business customers; number not disclosed",
+   "date": "2026-11-17",
+   "ongoing": true,
+   "status": "Bell investigating, RCMP investigating; customer notices sent Nov 23",
+   "summary": "An attacker got into an internal Bell system holding names, addresses, phone numbers, emails, account numbers and last-payment details.",
+   "sources": [
+    {"name": "BNN Bloomberg", "url": "https://www.bnnbloomberg.ca/business/company-news/2026/11/23/bell-investigating-cyberattack-that-exposed-customer-information-last-week/"},
+    {"name": "Bell notice", "url": "https://www.bell.ca/Residential_services/cybernotice"},
+    {"name": "The Perimeter (RCMP probe)", "url": "https://theperimetersite.com/hacked-today"}
+   ],
+   "tweets": [
+    {"name": "Dark Web Intelligence", "handle": "DailyDarkWeb", "time": "2026-11-24T09:19:57Z", "url": "https://x.com/DailyDarkWeb/status/2125157463037026767", "text": "UPDATE: Bell Canada says its Nov. 17 breach also hit consumers… Bell says card numbers and bank details were not, and it has not said how many customers were affected."},
+    {"name": "Jay Bishop", "handle": "jbish1572", "time": "2026-11-23T20:34:31Z", "url": "https://x.com/jbish1572/status/2124964835192689101", "text": "Bell's breach got bigger… No cards taken, but an account number and last payment amount are exactly what a good scam call needs."}
+   ]
+  },
+  "france-supermarket-fridges": {
+   "title": "France blames Iran's Revolutionary Guard for supermarket fridge sabotage",
+   "victim": "~700 French supermarkets",
+   "attacker": "Shahid Kaveh, IRGC (Iran), per France",
+   "type": "Sabotage (OT)",
+   "scale": "~700 of France's 10,000 supermarkets; at least 15 fires",
+   "date": "2026-11-09",
+   "ongoing": false,
+   "status": "Arrest warrants for three Iranians; France seeking EU sanctions",
+   "summary": "France formally attributed the Oct 11-12 attack that hijacked refrigeration controls and spoiled food. Similar outages hit stores elsewhere in Europe on Nov 2.",
+   "sources": [
+    {"name": "AP via OPB", "url": "https://www.opb.org/article/2026/11/09/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/"},
+    {"name": "ABC News", "url": "https://abcnews.com/International/unprecedented-cyberattacks-refrigerators-france/story?id=138028066"},
+    {"name": "Forbes", "url": "https://forbes.com/sites/ariredbord/2026/11/24/defenders-must-move-at-machine-speed-to-stop-ai-cyberattacks"}
+   ],
+   "tweets": []
+  },
+  "osaka-email-provider": {
+   "title": "Email distribution provider hack exposes ~77M addresses, incl. Osaka city",
+   "victim": "Osaka city and ~400 customers of an email service",
+   "attacker": "Unknown",
+   "type": "Supply chain",
+   "scale": "~77M email addresses; 1M+ from Osaka",
+   "date": "2026-11-02",
+   "ongoing": false,
+   "status": "Disclosed; used to send fraudulent emails",
+   "summary": "Attackers compromised a third-party email distribution service, exposing customers' mailing lists and sending fraudulent emails.",
+   "sources": [
+    {"name": "Check Point Research", "url": "https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/"}
+   ],
+   "tweets": []
+  },
+  "tsmc-cloud-provider": {
+   "title": "TSMC employee data exposed through a cloud provider",
+   "victim": "TSMC current and former employees",
+   "attacker": "Unknown",
+   "type": "Breach (third party)",
+   "scale": "6.9 GB of alleged employee data advertised",
+   "date": "2026-11-16",
+   "ongoing": false,
+   "status": "TSMC says its own systems and customer data were unaffected",
+   "summary": "A breach at an unnamed cloud provider exposed TSMC staff information, later advertised on a cybercrime forum.",
+   "sources": [
+    {"name": "Check Point Research", "url": "https://research.checkpoint.com/2026/16th-november-threat-intelligence-report/"}
+   ],
+   "tweets": []
+  },
+  "infoblox-vendor": {
+   "title": "Infoblox customer data accessed via a migration vendor",
+   "victim": "Infoblox",
+   "attacker": "Unknown",
+   "type": "Breach (third party)",
+   "scale": "Customer count not disclosed",
+   "date": "2026-11-23",
+   "ongoing": false,
+   "status": "Infoblox says products and services unaffected",
+   "summary": "A compromised data migration vendor exposed sensitive customer data stored in a migration environment.",
+   "sources": [
+    {"name": "Check Point Research", "url": "https://research.checkpoint.com/2026/23rd-november-threat-intelligence-report/"}
+   ],
+   "tweets": []
+  },
+  "binance-heist": {
+   "title": "Binance $6.36B heist, the largest theft on record",
+   "victim": "Binance",
+   "attacker": "TraderTraitor (North Korea), per FBI",
+   "type": "Crypto theft",
+   "scale": "$6.36B stolen across ten blockchains",
+   "date": "2026-10-29",
+   "ongoing": true,
+   "status": "DOJ moved to forfeit $1.1B in frozen USDC; $2.9B+ frozen, seized or returned",
+   "summary": "Attackers drained Binance hot wallets in about 20 minutes. Recovery and laundering tracking are still under way.",
+   "sources": [
+    {"name": "TRM Labs", "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"},
+    {"name": "CoinDesk", "url": "https://coindesk.com/policy/2026/11/24/u-s-seeks-usd1-1-billion-seized-in-binance-hack-as-north-korean-funds-keep-moving"},
+    {"name": "NPR", "url": "https://www.npr.org/2026/10/31/nx-s1-6024426/binance-crypto-heist-cyber-criminals-north-korea"}
+   ],
+   "tweets": [
+    {"name": "Wu Blockchain", "handle": "WuBlockchain", "time": "2026-11-21T02:02:55Z", "url": "https://x.com/WuBlockchain/status/2123960315440500768", "text": "Investigation: Only $32M recovered three weeks after $6.4B Binance hack, $2.82B frozen… The FBI previously attributed the attack to North Korea-linked TraderTraitor."}
+   ]
+  }
  }
 }
